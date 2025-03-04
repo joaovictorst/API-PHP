@@ -8,5 +8,3 @@ header('Content-type: application/json');
 
 $app = new App\App();
 $app->handleRequest();
-
-$app->getRoute();

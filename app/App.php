@@ -2,7 +2,6 @@
 
 namespace App;
 
-use App\Http\Controllers\UserController;
 use App\Router;
 class App {
 

@@ -61,7 +61,7 @@ class Router
                     $instance = new $class();
                     $instance->$method(...$matches);
                 } catch (\ArgumentCountError $th) {
-                    // exit(json_encode(["message" => "Cê é bem do viado mesmo em, tem que passa os argumento burro do caralho"]));
+                    
                     var_dump($th);
                 } catch (\Throwable $th) {
                     var_dump($th);
