@@ -25,6 +25,16 @@ class Router
         self::addRoute(Request::METHOD_PUT, $route, $action);
     }
 
+    public static function post($route, $action)
+    {
+        self::addRoute(Request::METHOD_GET, $route, $action);
+    }
+
+    public static function delete($route, $action)
+    {
+        self::addRoute(Request::METHOD_GET, $route, $action);
+    }
+
     public function dispatch($url)
     {
         self::verifyRoute($this->treatRoute($url), self::$routes);
